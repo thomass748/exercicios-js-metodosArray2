@@ -30,3 +30,7 @@ console.log(existeUsuarioInativo)
 console.log('---------------------------')
 const todosUsuariosMaioresDeIdade = usuarios.every((item) => item.idade > 17)
 console.log(todosUsuariosMaioresDeIdade)
+
+console.log('---------------------------')
+const calcularMediaIdade = usuarios.reduce((ac, item) => ac + item.idade, 0) / usuarios.length;
+console.log(calcularMediaIdade);
