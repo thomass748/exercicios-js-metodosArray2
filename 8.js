@@ -4,3 +4,6 @@ const produtos = [
 { id: 3, nome: "Teclado", preco: 150, estoque: 10, ativo: false }, 
 { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true } 
 ]; 
+
+const posicaoProduto = produtos.findIndex((item) => item.ativo === true)
+console.log(posicaoProduto)

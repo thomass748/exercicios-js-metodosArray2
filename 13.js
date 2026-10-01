@@ -4,3 +4,6 @@ const produtos = [
 { id: 3, nome: "Teclado", preco: 150, estoque: 10, ativo: false }, 
 { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true } 
 ]; 
+
+const verificacao = produtos.every((item) => item.preco > 50)
+console.log(verificacao)

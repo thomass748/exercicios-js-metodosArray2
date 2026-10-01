@@ -5,5 +5,5 @@ const produtos = [
 { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true } 
 ]; 
 
-const posicaoProduto = produtos.indexOf((item) => item.nome === "Teclado")
+const posicaoProduto = produtos.findIndex((item) => item.nome === "Monitor")
 console.log(posicaoProduto)
